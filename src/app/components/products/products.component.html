@@ -1,0 +1,16 @@
+<div class="cart-top container-fluid">
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let producto of productList">
+                <div class="card col-md-3">
+                    <h5>{{producto.title}}</h5>
+                    <p>{{producto.description}}</p>
+                    <img src="{{producto.image}}" width="80px"/>
+                    <h6>{{producto.price}}</h6>
+                    <button class="btn btn-primary">Agregar carrito</button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+  
+</div>
