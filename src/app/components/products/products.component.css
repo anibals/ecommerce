@@ -1,0 +1,11 @@
+.content{
+    padding: 15px 15px 15px 15px;
+    margin: 8px 8px 8px 8px;
+}
+
+.card-inside{
+    padding: 15px 15px 15px 15px;
+    margin: 8px 8px 8px 8px;
+    width: 30%;
+    height: 20%;
+}

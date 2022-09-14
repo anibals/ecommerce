@@ -1,16 +1,25 @@
-<div class="cart-top container-fluid">
-    <div class="container">
-        <div class="row">
-            <ng-container *ngFor="let producto of productList">
-                <div class="card col-md-3">
-                    <h5>{{producto.title}}</h5>
-                    <p>{{producto.description}}</p>
-                    <img src="{{producto.image}}" width="80px"/>
-                    <h6>{{producto.price}}</h6>
-                    <button class="btn btn-primary">Agregar carrito</button>
-                </div>
-            </ng-container>
+<div class="row">
+    <ng-container *ngFor="let producto of productList">
+    <div class="col-sm-4">
+
+    <div class="card mb-3 content">
+    <div class="row no-gutters">
+        
+      <div class="col-md-4">
+        <img src="{{producto.image}}" width="80px"/>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{producto.title}}</h5>
+          <p class="card-text">{{producto.description}}</p>
+          <h6>{{producto.price}}</h6>
+          <button class="btn btn-primary">Agregar carrito</button>
         </div>
+      </div>
+    
     </div>
-  
-</div>
+
+  </div>
+
+</div> 
+</ng-container></div> 
